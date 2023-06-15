@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import DataList from './components/DataList/DataList';
+import Search from "./components/Search/Search";
+import data from "./data/data.json";
 
 function App() {
+  const [item, setItem] = useState(data);
+
+    const filterItems = (curcat) => {
+      if(curcat === ""){
+        setItem(data);
+        console.log(item);
+      }else{
+        const newItem = data.filter((newVal) => {
+          return newVal.city === curcat;
+        });
+        setItem(newItem);
+        console.log(newItem);
+      }
+    };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Search filterItem={filterItems} setItems={setItem} />
+      <DataList items={item} />
     </div>
   );
 }

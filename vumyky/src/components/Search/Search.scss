@@ -1,0 +1,50 @@
+.search {
+  &__container {
+    display: flex;
+    justify-content: flex-start;
+    height: 6rem;
+    width: 90%;
+    background-color: #ffdc9a;
+    border-radius: 5px;
+    padding: 1rem;
+    align-items: center;
+    position: relative;
+    top: 1rem;
+    left: 5%;
+
+    &--tinh-thanh,
+    &--quan-huyen,
+    &--mucgia,
+    &--dientich {
+      display: grid;
+      margin-right: 0.25rem;
+      label {
+        font-weight: bold;
+        text-align: start;
+        font-family: Arial,Helvetica,sans-serif;
+      }
+      .form-select{
+        font-family: Arial,Helvetica,sans-serif;
+      }
+    }
+
+    &__btn--submit {
+      margin-top: 1.5rem;
+      button {
+        font-weight: 500;
+        color: white;
+        background-color: #ffa80f;
+        border: none;
+        width: 6rem;
+        font-family: Arial,Helvetica,sans-serif;
+
+        &:focus,
+        &:hover {
+          transition: 0.3s ease all;
+          background-color: #fdb22f;
+          color: white;
+        }
+      }
+    }
+  }
+}

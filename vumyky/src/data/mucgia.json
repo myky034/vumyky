@@ -1,0 +1,36 @@
+{
+    "mucgia": [
+        {
+            "id": 1,
+            "content": "Dưới 1 triệu"
+        },
+        {
+            "id": 2,
+            "content": "1 triệu - 2 triệu"
+        },
+        {
+            "id": 3,
+            "content": "2 triệu - 3 triệu"
+        },
+        {
+            "id": 4,
+            "content": "3 triệu - 5 triệu"
+        },
+        {
+            "id": 5,
+            "content": "5 triệu - 7 triệu"
+        },
+        {
+            "id": 6,
+            "content": "7 triệu - 10 triệu"
+        },
+        {
+            "id": 7,
+            "content": "10 triệu - 15 triệu"
+        },
+        {
+            "id": 8,
+            "content": "Trên 15 triệu"
+        }
+    ]
+}
